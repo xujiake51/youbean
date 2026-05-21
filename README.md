@@ -8,12 +8,29 @@
 
 ## 项目简介
  
-基于HTML+JavaScript构建的静态网站
+基于Vue3构建静态网站
+https://www.runoob.com/vue3/vue3-install.html
 
 ## 实现流程
 
 1. 像素化图片
 2. 色域统一转换为rgb色彩
-3. 将rgb色彩映射到色号中，MARD_RGBmap.csv中有 色号->rgb 的映射，我们要通过聚类分析构建逆映射
-https://blog.csdn.net/weixin_41566313/article/details/157097969
-1. 
+3. 将rgb色彩映射到色号中
+   
+    MARD_RGBmap.csv中有MARD拼豆的 色号->rgb 的映射，我们要通过聚类分析的方法构建 rgb->色号 逆映射
+
+    https://blog.csdn.net/weixin_41566313/article/details/157097969
+    
+    市面主流拼豆有24，72，144等颜色，根据这些产品的色号表确定聚类程度
+4. 生成图纸
+
+## 前端界面
+
+- 图片上传按钮
+- 实时预览图
+- 调节滑块
+- 导出按钮  
+
+## 高级功能
+
+- 主体识别抠图
